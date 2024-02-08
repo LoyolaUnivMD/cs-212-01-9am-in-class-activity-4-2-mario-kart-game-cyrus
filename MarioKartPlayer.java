@@ -12,11 +12,11 @@ public class MarioKartPlayer {
   public MarioKartPlayer(String playerName, String characterName, int characterSpeed){
     this.playerName = playerName;
     this.characterName = characterName;
-    this.characterSpeed = 0;
+    this.characterSpeed = characterSpeed;
   }
 
   public void boostSpeed(int boostAmount){
-    speed += (characterSpeed + boostAmount <= 100)? boostAmount : 0;
+    characterSpeed += (characterSpeed + boostAmount <= 100)? boostAmount : 0;
   }
 
   public void displayInfo(){
