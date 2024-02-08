@@ -8,6 +8,5 @@ public class MarioKartGame {
         player2.boostSpeed(10);
         player1.displayInfo();
         player2.displayInfo();
-        
     }
 }
